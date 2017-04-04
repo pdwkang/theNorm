@@ -9,7 +9,9 @@
 	<div class="container">
         <% movieDataArray.results.map((movie, index) =>{ %>
             <div class="col-sm-4">
-                <img src="<%= imageUrl %><%= movie.poster_path %>">
+            	<a href="/movie/<%=movie.id%>">
+                	<img src="<%= imageUrl %><%= movie.poster_path %>">
+                </a>
             </div>
         <% }); %>
 
